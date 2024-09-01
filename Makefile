@@ -1,8 +1,8 @@
 build:
-	go build -o bin/Hocus cmd/main.go
+	@go build -o bin/Hocus cmd/main.go
 
-run:
-	./bin/Hocus
+run: build
+	@./bin/Hocus
 
 test:
-	go test -v ./...
+	@go test -v ./...
